@@ -5,6 +5,7 @@
 <p>{{ "HolA BasscasASD" | uppercase }}</p>
 <p>{{ "HolA BasscasASD" | lowercase }}</p>
 <p>{{ "hoola" | reverse }}</p>
+<p>Today : {{ date | timeAgo }}</p>
 <div class="products--grid">
   <app-product
     (addedProduct)="onAddToShoppingCart($event)"
