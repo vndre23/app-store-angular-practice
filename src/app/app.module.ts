@@ -7,10 +7,18 @@ import { ImgComponent } from './components/img/img.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
 import { NavComponent } from './components/nav/nav.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ReversePipe } from './pipes/reverse.pipe';
 @NgModule({
-  declarations: [AppComponent, ImgComponent, ProductComponent, ProductsComponent, NavComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  declarations: [
+    AppComponent,
+    ImgComponent,
+    ProductComponent,
+    ProductsComponent,
+    NavComponent,
+    ReversePipe,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

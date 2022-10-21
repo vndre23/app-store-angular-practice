@@ -1,5 +1,10 @@
 <p>La cantidad {{ myShoppingCart.length }}</p>
 <p>total {{ total }}</p>
+<p>Today : {{ today | date }}</p>
+<p>otra fecha: {{ date | date: "yyyy.dd.MM" }}</p>
+<p>{{ "HolA BasscasASD" | uppercase }}</p>
+<p>{{ "HolA BasscasASD" | lowercase }}</p>
+<p>{{ "hoola" | reverse }}</p>
 <div class="products--grid">
   <app-product
     (addedProduct)="onAddToShoppingCart($event)"
