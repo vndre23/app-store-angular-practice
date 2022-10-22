@@ -5,7 +5,7 @@ import { Product } from '../../models/product.model';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss'],
 })
-export class ProductComponent implements OnInit {
+export class ProductComponent /*implements OnInit*/ {
   @Output() addedProduct = new EventEmitter<Product>();
 
   @Input() product: Product = {
@@ -18,7 +18,7 @@ export class ProductComponent implements OnInit {
   };
   constructor() {}
 
-  ngOnInit(): void {}
+  //ngOnInit(): void {}
   onAddToCart() {
     this.addedProduct.emit(this.product);
   }

@@ -14,6 +14,7 @@ export class ProductsComponent implements OnInit {
   products: Product[] = [];
   today = new Date();
   date = new Date(2021, 1, 21); //https://angular.io/api/common/DatePipe
+
   constructor(
     private storeService: StoreService,
     private productsService: ProductsService
